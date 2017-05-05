@@ -51,5 +51,6 @@ Register-ArgumentCompleter -CommandName Test-Completer -ParameterName Second -Sc
 Register-ArgumentCompleter -CommandName Test-Completer -ParameterName Third -ScriptBlock $completer
 "The version is $($PSVersionTable.PSVersion)"
 
+
 Enter-PSSession -ComputerName dc.monad.net -Credential $MonadCredentials
 Exit-PSSession

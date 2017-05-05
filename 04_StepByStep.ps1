@@ -100,7 +100,6 @@ $VMNetAdapter = Get-Command -Module Hyper-V -Noun VMNetworkAdapter |
     ForEach-Object Name
 Register-ArgumentCompleter -CommandName $VMNetAdapter -ParameterName Name -ScriptBlock $vmNetworkAdapterNameCompleter
 #endregion
-
 #region Be aware of gotchas:
 #region -- quotes (solved by New-CompletionResult - may want to "borrow" solution from there)
 foreach ($completion in 'foo', 'foo bar') {

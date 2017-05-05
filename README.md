@@ -1,6 +1,5 @@
 # PowerShell Conference Europe - TabExpansionPlusPlus in examples.
-
-![Image](http://becomelotr.cloudapp.net/bartekb/tabplusplus/raw/master/RightToolForTheJob.png)
+![Alt text](/RightToolForTheJob.png?raw=true "Linux at your door by Hania")
 
 This repository contains files used during demos for Tab++ session.
 You can find some history here...
