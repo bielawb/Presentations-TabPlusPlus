@@ -23,7 +23,7 @@ $completerV5 = {
     }                                                                                                             
 }                                                                                                             
 
-# If you don't want to use -NoQuotes... New-CompletionResult is just New-Object wrapper...
+# If you don't want don't need to worry about quotes... New-CompletionResult is just New-Object wrapper...
 $completer = {
     1..10 | ForEach-Object {                                                                                                   
         New-Object -TypeName System.Management.Automation.CompletionResult -ArgumentList @(                                                         
@@ -50,3 +50,6 @@ Register-ArgumentCompleter -CommandName Test-Completer -ParameterName First -Scr
 Register-ArgumentCompleter -CommandName Test-Completer -ParameterName Second -ScriptBlock $completerV4
 Register-ArgumentCompleter -CommandName Test-Completer -ParameterName Third -ScriptBlock $completer
 "The version is $($PSVersionTable.PSVersion)"
+
+Enter-PSSession -ComputerName dc.monad.net -Credential $MonadCredentials
+Exit-PSSession
